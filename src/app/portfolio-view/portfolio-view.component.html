@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+
+<div class="container d-flex flex-column mt-4" style="height: auto;">
+
+    <div class="d-flex my-2">
+        <label for="dropDownMenuButton" class="text-light my-auto mr-2"><p class="d-inline">Filter: </p></label>
+        <div class="dropdown my-auto">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"><p class="d-inline">Choose a Language</p></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" (click)="filterTech($event)"><p>All</p></a>
+                <a class="dropdown-item" (click)="filterTech($event)"><p>C#.Net</p></a>
+                <a class="dropdown-item" (click)="filterTech($event)"><p>iOS - Swift</p></a>
+                <a class="dropdown-item" (click)="filterTech($event)"><p>Web (HTML, Javascript, JQuery, Bootstrap, CSS/SCSS/SASS, Angular)</p></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="d-flex">
+        <ul class="d-flex flex-wrap list-inline">
+            <li *ngFor="let repo of tempRepos" class="m-2 bg-dark rounded hovereffect">
+                <img class="d-block img-responsive" [src]="repo.imagePath" alt="Image" style="width: 350px;">
+                <div class="d-flex flex-row justify-content-between bg-light rounded-bottom px-2">
+                    <small class="text-muted my-auto">{{ repo.tags }}</small>
+                    <!-- <button (click)="gotoRepo(repo.repo)" class="btn btn-primary my-2">-> Repo</button> -->
+                </div>   
+                <div class="overlay">
+                    <h2 class="mt-4">{{ repo.title }}</h2>
+                    <a class="info mt-3" href="#" (click)="gotoRepo(repo.repo)">GitHub</a>
+                </div>     
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+
+
+<!--CARD STYLE DISPLAY-->
+<!-- <div class="container d-flex flex-wrap mt-4" style="height: auto;">
+    <ul *ngFor="let repo of gitRepos" class="list-inline">
+        <li class="card p-0 m-2" style="height: 500px; width: 300px;">            
+            <img class="card-img-top p-2 border" [src]="repo.imagePath" alt="Card image cap" height="200px"/>
+            <div class="card-body overflow-auto">
+                <h5 class="card-title">{{ repo.title }}</h5>
+                <p class="card-text"><span class="font-weight-bold">{{ repo.problemTitle }}</span> 
+                    {{ repo.problemText }}</p>
+                <p class="card-text"><span class="font-weight-bold">{{ repo.solutionTitle }}</span> 
+                    {{ repo.solutionText }}</p>
+            </div>
+            <div class="card-footer d-flex flex-row justify-content-between">
+                <small class="text-muted my-auto">{{ repo.tags }}</small>
+                <button (click)="gotoRepo(repo.repo)" class="btn btn-primary mr-2">-> Repo</button>
+            </div>
+        </li>
+    </ul>    
+</div> -->

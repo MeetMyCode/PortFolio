@@ -1,0 +1,12 @@
+@import "./app/navbar/navbar.component";
+@import "./app/app.component";
+@import "./app/main-view/main-view.component";
+@import "./app/initial-overlay/initial-overlay.component";
+@import "./app/portfolio-view/portfolio-view.component";
+@import "./app/about-me-view/about-me-view.component";
+
+
+body {
+    overscroll-behavior: none;
+    background-color: black;
+}

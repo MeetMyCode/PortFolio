@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+p{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.3em;
+    display: inline;
+}
+
+
+h1{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8em; 
+    font-weight: bold; 
+}
+
+.modal.bottom .modal-dialog {
+	//position: fixed;
+	margin: auto;
+	width: auto;
+	height: auto;
+	-webkit-transform: translate3d(0%, 0, 0);
+	-ms-transform: translate3d(0%, 0, 0);
+	-o-transform: translate3d(0%, 0, 0);
+	transform: translate3d(0%, 0, 0);
+}
+
+.modal.bottom .modal-content {
+	height: auto;
+	//overflow-y: auto;
+}
+
+.modal.bottom.fade .modal-dialog {
+    bottom: -100%;
+	-webkit-transition: opacity 0.1s linear, bottom 0.1s ease-out;
+	-moz-transition: opacity 0.1s linear, bottom 0.1s ease-out;
+	-o-transition: opacity 0.1s linear, bottom 0.1s ease-out;
+	transition: opacity 0.1s linear, bottom 0.1s ease-out;
+}
+
+.modal.bottom.fade.show .modal-dialog {
+    bottom: 0%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img{
+	height: 256px;
+	width: 256px;
+}
+
+.modal-content, .modal-body{
+	background-color: rgba(0,0,0,0);
+
+}

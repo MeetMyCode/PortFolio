@@ -1,0 +1,34 @@
+    <div class="sticky-top">
+        <nav class="navbar navbar-expand-xl">
+            <a href="#" class="nav-brand text-success"><p>Ross' Github Portfolio</p></a>
+            <ul class="navbar-nav pr-2 ml-auto">
+                <li class="nav-item">
+                    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link text-success"><p>Home</p></a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/about']" routerLinkActive="active" class="nav-link text-success"><p>About</p></a>
+                </li>
+                <li class="nav-item">
+                    <a [routerLink]="['/portfolio']" routerLinkActive="active" class="nav-link text-success"><p>Portfolio</p></a>
+                </li>
+
+                <!-- <li class="nav-item">
+                    <a routerLinkActive="active" class="nav-link text-success" role="button" data-toggle="modal" data-target="#contactModal"><p>Contact</p></a>
+                </li> -->
+
+                <li class="nav-tem">
+                    <div class="dropdown my-auto">
+                        <a class="nav-link text-success dropdown-toggle" data-toggle="dropdown"><p class="d-inline">Contact</p></a>
+                        <div class="dropdown-menu" style="background-color: black" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item text-success" target="_blank" href="https://twitter.com/Rosstamun"><p>Twitter</p></a>
+                            <a class="dropdown-item text-success" target="_blank" href="https://uk.linkedin.com/in/ross-higgins-msc-5aa3752a"><p>LinkedIn</p></a>
+                            <a class="dropdown-item text-success" target="_blank" href="https://www.instagram.com/hellomrhiggins/"><p>Instagram</p></a>
+                            <a class="dropdown-item text-success" target="_blank" href="mailto:wild_animale@yahoo.co.uk"><p>Email</p></a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+

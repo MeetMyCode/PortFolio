@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { faUser, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'AngularDevelopmentPortFolio';
+  faUser = faUser;
+  faEnvelope = faEnvelope;
+
 }
