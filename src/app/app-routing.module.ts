@@ -7,7 +7,7 @@ import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
 
 const routes: Routes = [
   { path: '', component: InitialOverlayComponent },
-  { path: 'portfolio', component: PortfolioViewComponent, data: {animation: 'slideJumboDown'} },
+  { path: 'portfolio', component: PortfolioViewComponent},
   { path: 'about', component: AboutMeViewComponent },
 ];
 
