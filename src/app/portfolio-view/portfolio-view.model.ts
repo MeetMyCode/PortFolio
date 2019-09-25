@@ -3,7 +3,7 @@ export class Repos {
     public gitRepos = [
     
         {
-          imagePath: "/assets/Images/medventory.png", 
+          imagePath: "./assets/Images/medventory.png", 
           title: "MedVentory", 
           problemTitle: "The Problem: ", 
           solutionTitle: "The Solution: ",
@@ -13,7 +13,7 @@ export class Repos {
           repo: "https://github.com/MeetMyCode/MedVentory"
         },
         {
-          imagePath: "/assets/Images/PlaceholderImage.png", 
+          imagePath: "./assets/Images/PlaceholderImage.png", 
           title: "Political See", 
           problemTitle: "The Problem: ", 
           solutionTitle: "The Solution: ",
@@ -22,7 +22,7 @@ export class Repos {
           tags: ["iOS - Swift"]
         },    
         {
-          imagePath: "/assets/Images/PlaceholderImage.png", 
+          imagePath: "./assets/Images/PlaceholderImage.png", 
           title: "HydroMonitor", 
           problemTitle: "The Problem: ", 
           solutionTitle: "The Solution: ",

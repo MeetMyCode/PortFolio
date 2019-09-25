@@ -7,8 +7,8 @@ import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
 
 const routes: Routes = [
   { path: '', component: InitialOverlayComponent },
-  { path: 'portfolio', component: PortfolioViewComponent},
-  { path: 'about', component: AboutMeViewComponent },
+  { path: 'Portfolio', component: PortfolioViewComponent},
+  { path: 'About', component: AboutMeViewComponent },
 ];
 
 @NgModule({
