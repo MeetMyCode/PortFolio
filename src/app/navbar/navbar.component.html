@@ -1,33 +1,36 @@
     <div class="sticky-top">
-        <nav class="navbar navbar-expand-xl">
+        <nav class="navbar navbar-expand-md navbar-dark">
             <a href="#" class="nav-brand text-success"><p>Ross' Github Portfolio</p></a>
-            <ul class="navbar-nav pr-2 ml-auto">
-                <li class="nav-item">
-                    <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link text-success"><p>Home</p></a>
-                </li>
-                <li class="nav-item">
-                    <a [routerLink]="['/About']" routerLinkActive="active" class="nav-link text-success"><p>About</p></a>
-                </li>
-                <li class="nav-item">
-                    <a [routerLink]="['/Portfolio']" routerLinkActive="active" class="nav-link text-success"><p>Portfolio</p></a>
-                </li>
-
-                <!-- <li class="nav-item">
-                    <a routerLinkActive="active" class="nav-link text-success" role="button" data-toggle="modal" data-target="#contactModal"><p>Contact</p></a>
-                </li> -->
-
-                <li class="nav-item">
-                    <div class="dropdown my-auto">
-                        <a class="nav-link text-success dropdown-toggle" data-toggle="dropdown"><p class="d-inline">Contact</p></a>
-                        <div class="dropdown-menu" style="background-color: black" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item text-success" target="_blank" href="https://twitter.com/Rosstamun"><p>Twitter</p></a>
-                            <a class="dropdown-item text-success" target="_blank" href="https://www.linkedin.com/in/ross-higgins-5aa3752a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwTQaSE2mQvGkBtpN%2Bzndhw%3D%3D"><p>LinkedIn</p></a>
-                            <a class="dropdown-item text-success" target="_blank" href="https://www.instagram.com/hellomrhiggins/"><p>Instagram</p></a>
-                            <a class="dropdown-item text-success" target="_blank" href="mailto:wild_animale@yahoo.co.uk"><p>Email</p></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav pr-2 ml-auto">
+                    <li class="nav-item">
+                        <a [routerLink]="['/']" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" class="nav-link text-success"><p>Home</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a [routerLink]="['/About']" routerLinkActive="active" class="nav-link text-success"><p>About</p></a>
+                    </li>
+                    <li class="nav-item">
+                        <a [routerLink]="['/Portfolio']" routerLinkActive="active" class="nav-link text-success"><p>Portfolio</p></a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <div class="dropdown my-auto">
+                            <a class="nav-link text-success dropdown-toggle" data-toggle="dropdown"><p class="d-inline">Contact</p></a>
+                            <div class="dropdown-menu" style="background-color: black" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item text-success" target="_blank" href="https://twitter.com/Rosstamun"><p>Twitter</p></a>
+                                <a class="dropdown-item text-success" target="_blank" href="https://www.linkedin.com/in/ross-higgins-5aa3752a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwTQaSE2mQvGkBtpN%2Bzndhw%3D%3D"><p>LinkedIn</p></a>
+                                <a class="dropdown-item text-success" target="_blank" href="https://www.instagram.com/hellomrhiggins/"><p>Instagram</p></a>
+                                <a class="dropdown-item text-success" target="_blank" href="mailto:wild_animale@yahoo.co.uk"><p>Email</p></a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+
+            </div>
+
         </nav>
     </div>
 

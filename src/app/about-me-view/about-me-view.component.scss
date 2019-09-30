@@ -1,25 +1,12 @@
-.myImage{
-    background: red;
-    height: 100%;
-}
-
-.aboutMeText{
-    background-color: lightcoral;
-    z-index: 2;
-    width: 300px;
-    height: 400px;
-    font-size: 20px;
-}
-
-.aboutMeView{
-    background-image: url("/assets/Images/bgAboutMe.jpg");
-    background-size: cover;
-    width: 100vw;
-    z-index:0;
-}
-
 h1 {
     font-family: 'Indie Flower', cursive;
     font-size: 3em; 
 }
 
+.aboutMeBox{
+    max-height: 70vh; 
+    width: 550px; 
+    margin-right: 5%;
+    background-color: rgba(255,255,255, 0.5); 
+    z-index: 1;
+}
