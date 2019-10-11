@@ -13,10 +13,10 @@ export class Repos {
           repo: "https://github.com/MeetMyCode/MedVentory"
         },
         {
-          imagePath: "./assets/Images/PlaceholderImage.png", 
-          title: "Political See", 
-          problemTitle: "The Problem: ", 
-          solutionTitle: "The Solution: ",
+          imagePath: "./assets/Images/cctvHeaderImage.png", 
+          title: "FolderWatch", 
+          problemTitle: "The Problem: Auto-generated statistical results could not be passed on to the relevent people in a timely manner due to a short-coming of the statistical application.", 
+          solutionTitle: "The Solution: Monitor the output folder of the statisical application and email the output to the relevant recipients.",
           problemText: "Keeping tabs on Parliamentary MP's can be difficult.",
           solutionText: "Political See  - puts all the information at your fingertips. It's a dashboard to quickly view almost anything about any of the MP's currently within the UK Parlaiment.",
           tags: ["iOS - Swift"]
