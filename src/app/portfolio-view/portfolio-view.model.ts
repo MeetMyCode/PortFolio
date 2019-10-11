@@ -11,7 +11,9 @@ export class Repos {
         {
           imagePath: "./assets/Images/cctvHeaderImage.png", 
           title: "FolderWatch", 
-          tags: ["C#.Net","WPF"]
+          tags: ["C#.Net","WPF"],
+          repo: "https://github.com/MeetMyCode/FolderWatch"
+
         },    
         {
           imagePath: "./assets/Images/PlaceholderImage.png", 
