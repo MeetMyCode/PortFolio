@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { $ } from 'protractor';
 
 @Component({
   selector: 'app-navbar',
@@ -12,5 +13,7 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  
+  runClickEvent(){
+    jQuery('#ContactDropDown').click();
+  }
 }
