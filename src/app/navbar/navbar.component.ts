@@ -13,7 +13,4 @@ export class NavbarComponent implements OnInit {
   ngOnInit() {
   }
 
-  runClickEvent(){
-    jQuery('#ContactDropDown').click();
-  }
 }
