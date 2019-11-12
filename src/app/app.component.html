@@ -1,5 +1,8 @@
 
-<div style="height: 100vh; width: 100vw; background-color: black;">
-    <router-outlet></router-outlet>
+<div [@routeAnimations]="prepareRoute(outlet)"
+        (@routeAnimations.start)="onSlideEventStart($event)"
+        (@routeAnimations.done)="onSlideEventEnd($event)" 
+        style="width: 100%; background-color: black;">
+    <router-outlet #outlet="outlet"></router-outlet>
 
 </div>

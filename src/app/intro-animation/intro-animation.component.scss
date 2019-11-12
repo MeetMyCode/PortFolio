@@ -1,0 +1,146 @@
+//SASS VARIABLES
+$expandingSquareStartWidth: 10px;
+$expandingSquareStartHeight: 10px;
+
+$expandingSquareEndWidth: 95vw;
+$expandingSquareEndHeight: 95vh;
+
+$InitialisingTextColor: #1ec503;
+$maskColor: black;
+
+#InitialisingText{
+
+    animation-name: blinkingInitialisationText;
+    animation-direction: forwards;
+    animation-iteration-count: 10;
+    animation-duration: .1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes blinkingInitialisationText{
+
+    0%{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $InitialisingTextColor;
+
+        opacity: 1;
+    }
+
+    50%{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $InitialisingTextColor;
+
+        opacity: 0;
+    }
+
+}
+
+#square {
+    animation-name: expandGreenBorder;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes expandGreenBorder{
+    from{
+        margin: 0;
+        position: absolute;
+        border-color: #1ec503;
+        border-width: 2px;
+        border-style: solid;
+
+        width: $expandingSquareStartWidth;
+        height: $expandingSquareStartHeight;
+        top: 50%;
+        left: 50%;
+        margin-top: ($expandingSquareStartHeight/2) * -1;
+        margin-left: ($expandingSquareStartWidth/2) * -1;
+    }
+    to{
+        margin: 0;
+        position: absolute;
+        border-color: #1ec503;
+        border-width: 2px;
+        border-style: solid;
+
+        width: $expandingSquareEndWidth;
+        height: $expandingSquareEndHeight;
+        top: 50%;
+        left: 50%;
+        margin-top: ($expandingSquareEndHeight/2) * -1;
+        margin-left: ($expandingSquareEndWidth/2) * -1;
+    }
+}
+
+#InitialisationCompleteText{
+    animation-name: InitialisationCompleteText;
+    animation-direction: forwards;
+    animation-iteration-count: 3;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes InitialisationCompleteText{
+    from{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $InitialisingTextColor;
+
+        opacity: 0; 
+    }
+
+    to{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $InitialisingTextColor;
+
+        opacity: 1;
+    }
+}
+
+.mask{
+
+    animation-name: showMask;
+    animation-iteration-count: 1;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    animation-delay: 5s;
+}
+
+@keyframes showMask{
+    from{
+        z-index: 4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: $maskColor;
+    }
+
+    to{
+        z-index: 4;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: $maskColor;
+    }
+}

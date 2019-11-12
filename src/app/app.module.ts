@@ -9,6 +9,7 @@ import { PortfolioViewComponent } from './portfolio-view/portfolio-view.componen
 import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { IntroAnimationComponent } from './intro-animation/intro-animation.component';
 
 //import { Repos } from './portfolio-view/portfolio-view.model';
 
@@ -18,7 +19,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     NavbarComponent,
     InitialOverlayComponent,
     PortfolioViewComponent,
-    AboutMeViewComponent
+    AboutMeViewComponent,
+    IntroAnimationComponent
     //Repos
   ],
   imports: [

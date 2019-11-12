@@ -4,6 +4,11 @@ import { Repos } from './portfolio-view.model';
 import * as $ from 'jquery';
 import { ThrowStmt } from '@angular/compiler';
 
+
+function resetOverflow() {
+  $('body').css('overflow-y','auto');
+};
+
 @Component({
   selector: 'app-portfolio-view',
   templateUrl: './portfolio-view.component.html',
@@ -22,6 +27,10 @@ export class PortfolioViewComponent implements OnInit {
    }
 
   ngOnInit() {
+  }
+
+  ngAfterViewChecked(){
+    resetOverflow();
   }
 
 
