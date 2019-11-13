@@ -9,6 +9,7 @@ $InitialisingTextColor: #1ec503;
 $maskColor: black;
 
 #InitialisingText{
+    opacity: 0;
 
     animation-name: blinkingInitialisationText;
     animation-direction: forwards;
@@ -50,7 +51,6 @@ $maskColor: black;
     animation-fill-mode: forwards;
 }
 
-
 @keyframes expandGreenBorder{
     from{
         margin: 0;
@@ -83,6 +83,9 @@ $maskColor: black;
 }
 
 #InitialisationCompleteText{
+
+    opacity: 0;
+
     animation-name: InitialisationCompleteText;
     animation-direction: forwards;
     animation-iteration-count: 3;
@@ -99,7 +102,6 @@ $maskColor: black;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $InitialisingTextColor;
-
         opacity: 0; 
     }
 
@@ -109,7 +111,6 @@ $maskColor: black;
         left: 50%;
         transform: translate(-50%, -50%);
         color: $InitialisingTextColor;
-
         opacity: 1;
     }
 }

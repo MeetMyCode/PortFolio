@@ -29,11 +29,6 @@ export class PortfolioViewComponent implements OnInit {
   ngOnInit() {
   }
 
-  ngAfterViewChecked(){
-    resetOverflow();
-  }
-
-
   gotoRepo(repoAddress: string){
     window.open(repoAddress, 'blank');
   }

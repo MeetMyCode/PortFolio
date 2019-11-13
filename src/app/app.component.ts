@@ -21,13 +21,13 @@ export class AppComponent {
 
 
   onSlideEventStart(event: AnimationEvent){
-    $('body').css('overflow: hidden');
-    //console.log('overflow is: ' + $('body').css("overflow"));
+    $('body').css('overflow', 'hidden');
+    console.log('overflow is: ' + $('body').css("overflow"));
   }
 
   onSlideEventEnd(event: AnimationEvent){
-    $('body').css('overflow: auto');
-    //console.log('overflow is: ' + $('body').css("overflow"));
+    $('body').css('overflow', 'auto');
+    console.log('overflow is: ' + $('body').css("overflow"));
   }
 }
 
