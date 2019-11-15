@@ -7,7 +7,7 @@ import { IntroAnimationComponent } from './intro-animation/intro-animation.compo
 import { TestComponent } from './test/test.component';
 
 const routes: Routes = [
-  { path: '', component: IntroAnimationComponent },
+  { path: '', component: TestComponent },
   { path: 'Portfolio', component: PortfolioViewComponent, data: { animation: 'toPortfolioPage' } },
   { path: 'About', component: AboutMeViewComponent },
 ];

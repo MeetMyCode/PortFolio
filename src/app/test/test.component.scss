@@ -1,0 +1,228 @@
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+//SASS VARIABLES
+$expandingSquareStartWidth: 10px;
+$expandingSquareStartHeight: 10px;
+$expandingSquareEndWidth: 75vw;
+$expandingSquareEndHeight: 75vh;
+
+$slideSquareHeight: 75vh;
+$slideSquareWidth: 75vw;
+
+$bootTextContainerWidth: 400px;
+$bootTextContainerHeight: 80px;
+
+$interfaceTitleHeight: auto;
+$interfaceTitleWidth: 90%;
+//$interfaceTitleBorder: 
+
+
+$borderTextColor: #1ec503;
+
+$InitialisingTextColor: #1ec503;
+$InitialisingTextSize: .9em;
+$maskColor: black;
+
+.background{
+    position: absolute;
+    top: 0;
+    left: 0%;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("src/assets/Images/Backgrounds/fayeCornishUnsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: slideBackground;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+@keyframes slideBackground{
+    from{
+        position: absolute;
+        top: 0;
+        left: -100%;
+    }
+    to{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+.wrapper{
+    //background-color: lightskyblue;
+    background: inherit;
+    background-image: url("src/assets/Images/Backgrounds/fayeCornishUnsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    animation-name: slideSquare;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+
+    -webkit-box-shadow: 12px 12px 27px 4px rgba(0,0,0,0.78); 
+    box-shadow: 12px 12px 27px 4px rgba(0,0,0,0.78);
+}
+
+
+#outerSquare {
+    background: inherit;
+}
+
+#outerSquare:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(8px);
+    background: inherit;
+}
+
+#bootTextContainer{
+    background-color: rgba($color:white, $alpha: 0);
+    position: absolute;
+    top: 80%;
+    left: 5%; 
+
+    height: $bootTextContainerHeight;
+    width: $bootTextContainerWidth;
+}
+
+#bootTextContainer, .bootTextEntry{
+    font-family: 'Anonymous Pro', monospace; 
+    font-size: $InitialisingTextSize; 
+    color: $InitialisingTextColor;
+    display: block;
+}
+.anim-typewriter{
+
+    white-space: nowrap;
+    overflow: hidden;  
+
+    animation: typewriter 0.5s steps(26) 1s 1 normal both,
+               blinkTextCursor 500ms steps(44) infinite normal;    
+}
+
+.finalBootTextEntry{
+    color: red;
+    display: block;
+    font-family: 'Anonymous Pro', monospace; 
+    font-size: $InitialisingTextSize; 
+
+    animation-name: finalBootTextEntryAnimation;
+    animation-iteration-count: 10;
+    animation-duration: 0.3s;
+}
+
+.interfaceTitle{
+    height: $interfaceTitleHeight;
+    width: $interfaceTitleWidth;
+    //background-color: red;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    text-align: center;
+    font-size: 2.5em;
+    border-style: solid;
+    border-color: steelblue;
+    
+}
+
+.interfaceItem{
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 26.67%;
+    height: 65%;
+    background-color: turquoise;
+    display: inline-block;
+}
+
+@keyframes finalBootTextEntryAnimation{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@keyframes slideSquare{
+    from{
+        position: absolute;
+        top: 50%;
+        left: 150%;
+        margin-top: ($slideSquareHeight/2) * -1;
+        margin-left: ($slideSquareWidth/2) * -1;
+        border-color:$borderTextColor;
+        border-width: 2px;
+        border-style: solid;
+        width: $slideSquareWidth;
+        height: $slideSquareHeight;
+    }
+
+    to{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: ($slideSquareHeight/2) * -1;
+        margin-left: ($slideSquareWidth/2) * -1;
+        border-color:$borderTextColor;
+        border-width: 2px;
+        border-style: solid;
+        width: $slideSquareWidth;
+        height: $slideSquareHeight;
+    }
+}
+
+@keyframes growSquare{
+
+    from{
+        margin: 0;
+        position: absolute;
+        border-color: #1ec503;
+        border-width: 2px;
+        border-style: solid;
+
+        width: $expandingSquareStartWidth;
+        height: $expandingSquareStartHeight;
+        top: 50%;
+        left: 50%;
+        margin-top: ($expandingSquareStartHeight/2) * -1;
+        margin-left: ($expandingSquareStartWidth/2) * -1;
+    }
+    to{
+        margin: 0;
+        position: absolute;
+        border-color: #1ec503;
+        border-width: 2px;
+        border-style: solid;
+
+        width: $expandingSquareEndWidth;
+        height: $expandingSquareEndHeight;
+        top: 50%;
+        left: 50%;
+        margin-top: ($expandingSquareEndHeight/2) * -1;
+        margin-left: ($expandingSquareEndWidth/2) * -1;
+    }
+}
+
+//BOOT TEXT TYPEWRITER ANIMATION
+
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 25em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
