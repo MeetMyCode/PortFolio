@@ -23,11 +23,11 @@ function addBootTextEntry(i: number, bootTextArrayEntry: string){
     setTimeout(() => {
       var text = '<p class="finalBootTextEntry">' + bootTextArrayEntry + '</p>';
       $('#bootTextContainer').append(text);          
-    }, 1000 * i);
+    }, 1000 * i + 1000);
   } else {
     setTimeout(() => {
       console.log('timer started!');
-      var text = '<p class="bootTextEntry">' + bootTextArrayEntry + '</p>';
+      var text = '<p class="bootTextEntry animBootEntry0 animBootEntry1">' + bootTextArrayEntry + '</p>';
       $('#bootTextContainer').append(text);    
     }, 1000 * i);    
   }
