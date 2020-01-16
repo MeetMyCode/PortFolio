@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
+import { Navigation } from 'selenium-webdriver';
+import { Router } from '@angular/router';
 
 //JAVASCRIPT
 function bootTextSequence(){
@@ -42,6 +44,10 @@ function clearBootText(){
   }, 8000);
 }
 
+function loadPortfolioAfterAnimation(router: Router){
+  setTimeout(function(router){ this.router.navigate(['/Portfolio']); }, 10000);
+}
+
 @Component({
   selector: 'app-test',
   templateUrl: './test.component.html',
@@ -50,11 +56,13 @@ function clearBootText(){
 export class TestComponent implements OnInit {
   bootText: any;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
     bootTextSequence();
     clearBootText();
-  }
+    //loadPortfolioAfterAnimation(this.router);
 
+    setTimeout(() => this.router.navigateByUrl('Portfolio'),8500);
+  }
 }

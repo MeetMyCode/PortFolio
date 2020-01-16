@@ -1,7 +1,13 @@
-p{
-  font-family: 'Indie Flower', cursive;
-  font-size: 1.3em;
-  display: inline;
+
+#background{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("src/assets/Images/Backgrounds/fayeCornishUnsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .hovereffect {

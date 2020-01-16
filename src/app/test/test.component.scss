@@ -62,10 +62,12 @@ $maskColor: black;
     background-repeat: no-repeat;
     background-size: cover;
 
-    animation-name: slideSquare;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;
-    animation-direction: normal;
+    animation: slideSquare 1.5s forwards normal, zoomWrapperToFullScreenPortfolio 0.5s forwards normal 8s;
+
+    //animation-name: slideSquare;
+    //animation-duration: 1.5s;
+    //animation-fill-mode: forwards;
+    //animation-direction: normal;
 
     -webkit-box-shadow: 12px 12px 27px 4px rgba(0,0,0,0.78); 
     box-shadow: 12px 12px 27px 4px rgba(0,0,0,0.78);
@@ -131,13 +133,30 @@ $maskColor: black;
     left: 5%;
     text-align: center;
     font-size: 2.5em;
-    border-style: solid;
-    border-color: steelblue;
-    border-width: 2px;
+    opacity: 0;
 
-    -webkit-box-shadow: 8px 8px 3px -1px rgba(0,0,0,0.76); 
-    box-shadow: 8px 8px 3px -1px rgba(0,0,0,0.76);
+    animation-name: fadeInTitle;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
     
+}
+
+@keyframes fadeInTitle{
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+
+        border-style: solid;
+        border-color: steelblue;
+        border-width: 2px;
+
+        -webkit-box-shadow: 8px 8px 3px -1px rgba(0,0,0,0.76); 
+        box-shadow: 8px 8px 3px -1px rgba(0,0,0,0.76);
+    }
 }
 
 .interfaceTitle>p{
@@ -156,9 +175,55 @@ $maskColor: black;
 }
 
 .interfaceItem1{
-    top: 25%;
+    top: -100%;
     left: 5%;
     overflow: hidden;
+
+    animation-name: dropInItem1;
+    animation-duration: 1s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropInItem1{
+    from{
+        top: -100%;
+        left: 5%;
+    }
+
+    to{
+        top: 25%;
+        left: 5%;
+    }
+}
+
+@keyframes zoomWrapperToFullScreenPortfolio{
+    from{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: ($slideSquareHeight/2) * -1;
+        margin-left: ($slideSquareWidth/2) * -1;
+        border-color:$borderTextColor;
+        border-width: 2px;
+        border-style: solid;
+        width: $slideSquareWidth;
+        height: $slideSquareHeight;
+    }
+
+    to{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        margin-top: 0;
+        margin-left: 0;
+        border-color:$borderTextColor;
+        border-width: 2px;
+        border-style: solid;
+        width: 100vw;
+        height: 100vh;
+    }
+
 }
 
 .bgVideo{
@@ -167,13 +232,49 @@ $maskColor: black;
 }
 
 .interfaceItem2{
-    top: 25%;
+    top: -100%;
     left: 36.67%;
+    overflow: hidden;
+
+    animation-name: dropInItem2;
+    animation-duration: 1s;
+    animation-delay: 8.2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropInItem2{
+    from{
+        top: -100%;
+        left: 36.67%;
+    }
+
+    to{
+        top: 25%;
+        left: 36.67%;
+    }
 }
 
 .interfaceItem3{
-    top: 25%;
+    top: -100%;
     left: 68.34%;
+    overflow: hidden;
+
+    animation-name: dropInItem3;
+    animation-duration: 1s;
+    animation-delay: 8.4s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes dropInItem3{
+    from{
+        top: -100%;
+        left: 68.34%;
+    }
+
+    to{
+        top: 25%;
+        left: 68.34%;
+    }
 }
 
 
