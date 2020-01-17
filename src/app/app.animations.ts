@@ -2,7 +2,7 @@ import { trigger, transition, style, query, animateChild, group, animate } from 
 
 export const FadeInAnimation = trigger('routeAnimations', [
   // The '* => *' will trigger the animation to change between any two states
-  transition('* => toPortfolioPage', [
+  transition('toHomePage => toPortfolioPage', [
     // The query function has three params.
     // First is the event, so this will apply on entering or when the element is added to the DOM.
     // Second is a list of styles or animations to apply.
@@ -27,18 +27,7 @@ export const FadeInAnimation = trigger('routeAnimations', [
   ])
 ]);
 
-
-
-
-
-
-
-
-
-
-
-
-/* export const slideInAnimation =
+export const slideInAnimation =
   trigger('routeAnimations', [
     transition('* <=> *', [
       style({ position: 'relative' }),
@@ -65,5 +54,5 @@ export const FadeInAnimation = trigger('routeAnimations', [
       query(':enter', animateChild()),
     ])
   ]);
- */
+ 
   

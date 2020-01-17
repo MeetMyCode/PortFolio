@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { InitialOverlayComponent } from './initial-overlay/initial-overlay.component';
 import { PortfolioViewComponent } from './portfolio-view/portfolio-view.component';
 import { AboutMeViewComponent } from './about-me-view/about-me-view.component';
 import { IntroAnimationComponent } from './intro-animation/intro-animation.component';
@@ -15,7 +14,6 @@ import { TestComponent } from './test/test.component';
   declarations: [
     AppComponent,
     NavbarComponent,
-    InitialOverlayComponent,
     PortfolioViewComponent,
     AboutMeViewComponent,
     IntroAnimationComponent,

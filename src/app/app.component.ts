@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { /* slideInAnimation */ FadeInAnimation } from './app.animations'; 
+import { slideInAnimation, FadeInAnimation } from './app.animations'; 
 import { RouterOutlet } from '@angular/router';
 //import { $ } from 'protractor';
 import * as $ from 'jquery';
@@ -9,8 +9,8 @@ import * as $ from 'jquery';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-/*     slideInAnimation,
- */    FadeInAnimation
+    slideInAnimation,
+    FadeInAnimation
     // animation triggers go here
   ]
 })
