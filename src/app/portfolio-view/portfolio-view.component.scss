@@ -1,6 +1,9 @@
+//SASS VARIABLES
+
+$borderTextColor: #1ec503;
 
 #background{
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -9,6 +12,11 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.repo{
+  border-color:$borderTextColor;
+  border-width: 2px;
+  border-style: solid;}
 
 .hovereffect {
     //width: 100%;

@@ -1,7 +1,6 @@
 @import "./app/navbar/navbar.component";
 @import "./app/app.component";
 @import "./app/portfolio-view/portfolio-view.component";
-@import "./app/about-me-view/about-me-view.component";
 @import "./app/test/test.component";
 @import "./app/intro-animation/intro-animation.component";
 
@@ -15,15 +14,15 @@ body {
 p{
     font-family: 'Arial';
     font-size: 1em;
+    margin: 0;
+
 }
 
 router-outlet + * {
     position: absolute;
+    overflow-x: hidden;
+    overflow-y: scroll;
     display: block;
     height: 100vh;
     width: 100vw;
-}
-
-p{
-    margin: 0;
 }

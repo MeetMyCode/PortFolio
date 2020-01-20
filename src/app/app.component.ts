@@ -9,7 +9,8 @@ import * as $ from 'jquery';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   animations: [
-    slideInAnimation,
+    
+     slideInAnimation,
     FadeInAnimation
     // animation triggers go here
   ]

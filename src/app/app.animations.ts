@@ -28,7 +28,7 @@ export const FadeInAnimation = trigger('routeAnimations', [
 ]);
 
 export const slideInAnimation =
-  trigger('routeAnimations', [
+  trigger('SlidingRouteAnimations', [
     transition('* <=> *', [
       style({ position: 'relative' }),
       query(':enter, :leave', [

@@ -21,6 +21,9 @@ export class PortfolioViewComponent implements OnInit {
   tempRepos;
   selectedTech: string;
 
+  repoMedVentory = "https://github.com/MeetMyCode/MedVentory";
+  repoFolderWatch = "https://github.com/MeetMyCode/FolderWatch";
+
   constructor(gitRepos: Repos) {
     this.gitRepos = gitRepos.getRepos();
     this.tempRepos = this.gitRepos;
