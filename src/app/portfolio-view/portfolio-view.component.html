@@ -21,8 +21,8 @@
     <!-- EACH REPO IS SPAT OUT HERE -->
     <div class="d-flex">
         <ul class="d-flex row flex-wrap list-inline m-0 p-0">
-            <li *ngFor="let repo of tempRepos" class="col-4 p-2 m-0 bg-transparent rounded hovereffect">
-                <img class="d-block img-responsive" [src]="repo.imagePath" alt="Image" style="width: 100%;">
+            <li *ngFor="let repo of tempRepos" class="col-lg-4 p-2 m-0 bg-transparent rounded hovereffect">
+                <img class="d-block img-fluid" [src]="repo.imagePath" alt="Image" style="width: 100%;">
                 <div class="d-flex flex-row justify-content-between bg-light rounded-bottom px-2">
                     <small class="text-muted my-auto">{{ repo.tags }}</small>
                 </div>   

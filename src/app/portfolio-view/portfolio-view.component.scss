@@ -16,7 +16,13 @@ $borderTextColor: #1ec503;
 .repo{
   border-color:$borderTextColor;
   border-width: 2px;
-  border-style: solid;}
+  border-style: solid;
+}
+
+li{
+  max-width: 100%;
+  height: auto;
+}
 
 .hovereffect {
     //width: 100%;
