@@ -50,21 +50,18 @@ export class PortfolioViewComponent implements OnInit {
     this.tempRepos = [];
   }
 
-  displaySelectedRepos(tech: string){
+  displaySelectedRepos(techCategory: string){
 
-    if (tech == "Web (HTML, Javascript, JQuery, Bootstrap, CSS/SCSS/SASS, Angular)") {
-      tech = "Web";
-      this.populateTempRepos(tech);
-    }else if (tech == "All") {
+    if (techCategory == "All") {
       this.tempRepos = this.gitRepos;
     }else{
-      this.populateTempRepos(tech);
+      this.populateTempRepos(techCategory);
     }
   }
 
-  populateTempRepos(tech: string){
+  populateTempRepos(techCategory: string){
     this.gitRepos.forEach(repo => {
-      if (repo.tags.includes(tech)) {
+      if (repo.category.includes(techCategory)) {
         this.tempRepos.push(repo);
       }
     }); 
