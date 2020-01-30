@@ -16,7 +16,7 @@ export class Repos {
     {
       imagePath: "./assets/Images/RepoThumbNails_1280by666/HydroWatchCoverImage.png", 
       title: "HydroWatch", 
-      tags: ["Web"],
+      tags: ["HTML, CSS3/SCSS, Bootstrap 4, Javascript/JQuery, Angular 8"],
       repo: "https://github.com/MeetMyCode/HydroWatch"
     }                    
     
